@@ -10,3 +10,21 @@
 
 <body <?php body_class(  ); ?>>
 
+<header>
+    <div class="container clear">
+        <h1 class="logo"><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="Classic"></a></h1>
+        <nav class="nav-header">
+            <?php
+            $args = array(
+                'theme_location' => 'primary'
+            );
+            ?>
+            <?php wp_nav_menu( $args); ?>
+        </nav>
+    </div>
+
+    <?php
+        if (is_home() or is_page('news'));
+    ?>
+
+</header>

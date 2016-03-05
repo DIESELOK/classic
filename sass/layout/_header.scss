@@ -1,231 +1,39 @@
-.h-page {
-  /*position: fixed;*/
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  .mobile-menu {
-    border-bottom: 1px solid #ccc;
-    .logo {
-      float: left;
-      margin-top: 40px;
-      a {
-        color: #666262;
-        font-family: Pacifico;
-        font-size: 40px;
-        &:hover {
-          opacity: 0.8;
+header{
+  min-height: 80px;
+  padding: 30px 0;
+  background-color: #111;
+  .logo{
+    float:left;
+    transition: 0.5s;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  .nav-header{
+    float: right;
+    margin-top: 13px;
+    li{
+      display:inline-block;
+      margin-left: 30px;
+      &:first-of-type{
+        margin-left: 0px;
+      }
+      a{
+        font-family: NexaBold;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ccc;
+        transition: 0.5s;
+        &:hover{
+          color: white;
         }
       }
     }
-    .social {
-      float: right;
-      margin-top: 50px;
-      ul {
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        display: inline-block;
-        a {
-          display: block;
-          width: 34px;
-          height: 34px;
-          padding-top: 10px;
-          background-color: #d4d4d4;
-          border-radius: 50%;
-          color: #fff;
-          text-align: center;
-          transition:0.5s;
-          &:hover{
-            .fa{
-              color: #666262;
-            }
-          }
-        }
+    li.current-menu-item{
+      a{
+        color: white;
       }
     }
-  }
-}
-
-.menu-item-29 a:hover {
-  background: #1da0f1;
-}
-
-.menu-item-30 a:hover {
-  background: #425f9b;
-}
-
-.menu-item-31 a:hover {
-  background: #fa7629;
-}
-
-.menu-toggle {
-  float: right;
-  margin: 50px 0 0 10px;
-  background: #666262;
-  width: 34px;
-  height: 34px;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.3125em;
-  cursor: pointer;
-}
-
-.menu-toggle:hover {
-  color: #87b672;
-}
-
-.main-menu {
-  display: none;
-  background-color: #fefefe;
-  border-bottom: 1px solid #ccc;
-}
-
-.main-menu ul {
-  margin: 0;
-  padding: 0;
-}
-
-.main-menu ul li {
-  margin: 15px 0;
-}
-
-.main-menu ul li a {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  color: #666262;
-  font-family: "Novecento", sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.main-menu ul li a:hover {
-  color: #87b672;
-}
-
-.menu-item {
-  position: relative;
-}
-
-.menu-item ul {
-  display: none;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-
-.menu-item:hover > ul {
-  display: block;
-}
-
-.search-nav-item {
-  display: none;
-  float: right;
-  width: 35px;
-}
-
-.search-nav-item a {
-  display: block;
-  padding-top: 30px;
-  color: #666262;
-  font-size: 1.25em;
-  text-align: right;
-}
-
-.search-nav-item a:hover {
-  color: #87b672;
-}
-
-div.menu-main-nav-container:before, div.menu-main-nav-container:after {
-  content: '';
-  display: table;
-}
-
-div.menu-main-nav-container:after {
-  clear: both;
-}
-
-div.menu-main-nav-container {
-  *zoom: 1;
-}
-
-.page-title {
-  width: 100%;
-  padding: 28px 0;
-  background: url("img/h-title-bg.png") top left #d4d4d4;
-  background-size: cover;
-  text-transform: uppercase;
-  font-family: "Novecento", sans-serif;
-  font-size: 2.25em;
-  color: #fefefe;
-  font-weight: 600;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .main-menu {
-    display: block!important;
-    border-bottom: none;
-  }
-
-  .main-nav-items {
-    width: 715px;
-    float: left;
-  }
-
-  .main-menu ul li {
-    display: inline-block;
-    margin: 0 5px;
-  }
-
-  .main-menu ul li:first-child {
-    margin-left: 0;
-  }
-
-  .main-menu ul li:last-child {
-    margin-right: 0;
-  }
-
-  .main-menu ul li a {
-    height: 74px;
-    padding-top: 30px;
-  }
-
-  .menu-item ul {
-    position: absolute;
-    background: #fefefe;
-    top: 38px;
-    left: 0;
-    width: 100%;
-    z-index: 99999;
-    margin-top: 15px;
-  }
-
-  .menu-item ul li {
-    margin: 10px 0;
-  }
-
-  .menu-item ul li a {
-    padding: 0 0 0 10px;
-    height: auto;
-  }
-
-  .search-nav-item {
-    display: block!important;
-  }
-}
-
-@media screen and (min-width: 1000px){
-  .main-nav-items {
-    width: auto;
-  }
-
-  .main-menu ul li a {
-    font-size: 1.125em;
   }
 }
