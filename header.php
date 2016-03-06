@@ -28,3 +28,9 @@
     ?>
 
 </header>
+
+<ul class="category-items clear">
+    <div class="container">
+        <?php wp_list_categories('orderby=name&title_li='); ?>
+    </div>
+</ul>

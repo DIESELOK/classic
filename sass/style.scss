@@ -9,31 +9,32 @@ Version: 1.0
   font-family: NexaBold;
   font-style: normal;
   font-weight: normal;
-  src: local('NexaBold'), url('/fonts/NexaBold.ttf') format('truetype');
+  src: local('NexaBold'), url('fonts/NexaBold.ttf') format('truetype');
 }
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
   font-weight: normal;
-  src: local('ProximaNova'), url('/fonts/proximanova-regular.ttf') format('truetype');
+  src: local('ProximaNova'), url('fonts/proximanova-regular.ttf') format('truetype');
 }
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
   font-weight: 600;
-  src: local('ProximaNova'), url('/fonts/proximanova-semibold.ttf') format('truetype');
+  src: local('ProximaNova'), url('fonts/proximanova-semibold.ttf') format('truetype');
 }
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
   font-weight: 800;
-  src: local('ProximaNova'), url('/fonts/proximanova-extrabold.ttf') format('truetype');
+  src: local('ProximaNova'), url('fonts/proximanova-extrabold.ttf') format('truetype');
 }
 
 @import 'compass';
 @import "grids";
 @import "reset";
 @import "layout/header";
+@import "site-parts/article-section";
 @import "layout/footer";
 
 @include border-box-sizing();

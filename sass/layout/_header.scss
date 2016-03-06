@@ -37,3 +37,26 @@ header{
     }
   }
 }
+.category-items{
+  .container{
+    padding: 0 90px;
+  }
+  display:block;
+  height: 62px;
+  border: 1px solid #ccc;
+  opacity: 0.84;
+  background-color: #f7f7f7;
+  li{
+    float: right;
+    display:inline-block;
+    margin-left:30px;
+    padding: 20px 0;
+    a{
+      color: #555;
+      font-family: NexaBold;
+    }
+  }
+  li.current-cat{
+    border-bottom: 1px solid black;
+  }
+}
