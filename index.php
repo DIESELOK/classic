@@ -2,6 +2,7 @@
 
 <section class="article-section clear">
     <div class="container clear">
+
             <?php
                 if (have_posts()):
                     while (have_posts()) : the_post(); ?>

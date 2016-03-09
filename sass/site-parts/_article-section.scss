@@ -81,5 +81,163 @@
   .pagination .current {
     color: #87b672;
   }
+}
 
+//comments
+
+section.post-content {
+  border-bottom: 1px solid #ccc;
+}
+
+.post-content img {
+  display: block;
+  margin: 30px auto;
+}
+
+.section-header {
+  margin: 50px 0;
+  font-family: 'NexaBold', sans-serif;
+  font-size: 2.125em;
+  font-weight: 600;
+  line-height: 1.47;
+}
+
+.comment-body {
+  margin-bottom: 50px;
+}
+
+.comment-author:before, .comment-author:after {
+  content: '';
+  display: table;
+}
+
+.comment-author:after {
+  clear: both;
+}
+
+.comment-author .avatar {
+  display: block;
+  border-radius: 50%;
+  float: left;
+  margin-right: 24px;
+}
+
+.comment-author .fn {
+  margin: 14px 0 19px;
+  font-style: normal;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2.08;
+}
+
+.comment-author a {
+  display: block;
+}
+
+.comment-body p,
+.comment-body .reply {
+  margin-left: 95px;
+}
+
+.comment .children {
+  padding-left: 95px;
+}
+
+/* Comment Form */
+.comment-form label {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 2.78;
+}
+
+.comment-form input, textarea {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 1.125em;
+  padding: 5px 10px;
+}
+
+.comment-form input {
+  width: 285px;
+  height: 36px;
+}
+
+.comment-form textarea {
+  width: 285px;
+  height: 165px;
+}
+
+.comment-form .submit {
+  width: 100px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-form .submit:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 640px){
+  .comment-form textarea {
+    width: 600px;
+  }
+}
+
+/* About Page */
+.single-page-container {
+  padding-bottom: 30px;
+}
+
+.our-team {
+  padding-top: 35px;
+  border-top: 1px solid #ccc;
+}
+
+.our-team .single-post-header {
+  margin: 24px auto 0;
+  font-size: 48px;
+  text-align: center;
+}
+
+.team-container {
+  text-align: center;
+}
+
+.member-item {
+  display: inline-block;
+  width: 298px;
+  padding: 60px 20px 0;
+  text-align: center;
+  vertical-align: top;
+}
+
+.member-item-photo {
+  display: block;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  overflow: hidden;
+  img{
+    border-radius: 50%;
+  }
+}
+
+.member-item-header {
+  margin: 31px 0 0;
+  font-size: 1.125em;
+  font-weight: 600;
+}
+
+.member-item p {
+  padding: 0 19px;
+}
+
+.member-item-position {
+  margin: 0 0 20px 0;
+  color: #555;
+  font-size: 1em;
+  font-weight: 600;
 }
